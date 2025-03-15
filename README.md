@@ -1,11 +1,11 @@
 # Baixar-videos
 
 Documentação yt-dlp: https://github.com/yt-dlp/yt-dlp
-Depois de ter instalado o que é necessário do arquivo requirements.txt. Para iniciar o aplicativo web use $ python run.py
+Depois de ter instalado o que é necessário do arquivo requirements.txt. Para iniciar o aplicativo web use `$ python run.py´
 
 # Baixar lives com streamlink
 Documentação streamlink: https://streamlink.github.io/
-Use o comando `pip install streamlink` para instalar o pacote.
+Use o comando `$ pip install streamlink` para instalar o pacote.
 
 no arquivo routes.py altere a parte abaixo para a URL da live copiada que você deseja baixar
 # url da live
