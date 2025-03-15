@@ -5,10 +5,7 @@ Depois de ter instalado o que é necessário do arquivo requirements.txt. Para i
 
 # Baixar lives com streamlink
 Documentação streamlink: https://streamlink.github.io/
-Para instalar o Streamlink, execute o comando:
-```bash
-$ pip install streamlink
-
+Use o comando `pip install streamlink` para instalar o pacote.
 
 no arquivo routes.py altere a parte abaixo para a URL da live copiada que você deseja baixar
 # url da live
