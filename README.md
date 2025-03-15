@@ -15,3 +15,4 @@ no arquivo `routes.py` altere a parte abaixo para a URL da live copiada que voc√
         if not success:
             return jsonify({'success': False, 'error': error})
         return jsonify({'success': True, 'video_filename': output_filename})
+Depois de alterar url da live reinicie o app novamente no seu navegador e coloque o mesmo link da live `https://www.youtube.com/live/Ni7rpSHG7xo?si=6RyE_mRUOS3TyWK8`
