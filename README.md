@@ -9,7 +9,7 @@ $pip install streamlink
 
 no arquivo routes.py altere para a URL da live copiada que você deseja baixar
 
-url da live
+# url da live
     if "https://www.youtube.com/live/Ni7rpSHG7xo?si=6RyE_mRUOS3TyWK8" in url:
         print("Baixando live stream do youtube")
         success, error = baixar_streamlink(url, output_path)
