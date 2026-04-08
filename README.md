@@ -151,6 +151,44 @@ brew install ffmpeg
 # Baixe de https://ffmpeg.org/download.html
 ```
 
+5. **gitignore (na raiz do projeto)**
+```
+gitignore
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+venv/
+env/
+ENV/
+
+# Flask
+instance/
+.webassets-cache
+
+# Uploads
+app/uploads/*.mp4
+app/uploads/*.webm
+app/uploads/*.mkv
+!app/uploads/.gitkeep
+
+# Cookies
+cookies.txt
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+```
+
+
+
+
 ### Erro de download muito lento
 - Configure um proxy nas opções do yt-dlp
 - Use cookies.txt para melhor performance
