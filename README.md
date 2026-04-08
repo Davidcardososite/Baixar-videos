@@ -194,7 +194,7 @@ Este software é fornecido "como está", sem garantias de qualquer tipo. O downl
 
 ## 📧 Contato
 
-Gmail - [@email](davidcardosodefarias@gmail.com) 
+Gmail - [@email](davidcardosodefarias@gmail.com)
 
 Link do Projeto: [https://github.com/Davidcardososite/Baixar-videos](https://github.com/Davidcardososite/Baixar-videos/)
 
