@@ -194,13 +194,12 @@ Este software é fornecido "como está", sem garantias de qualquer tipo. O downl
 
 ## 📧 Contato
 
-Seu Nome - [@seutwitter](https://twitter.com/seutwitter) - seuemail@exemplo.com
+Gmail - [@email](davidcardosodefarias@gmail.com) 
 
-Link do Projeto: [https://github.com/seu-usuario/youtube-downloader](https://github.com/seu-usuario/youtube-downloader)
+Link do Projeto: [https://github.com/Davidcardososite/Baixar-videos](https://github.com/Davidcardososite/Baixar-videos/)
 
 ## 🙏 Agradecimentos
 
 - [yt-dlp](https://github.com/yt-dlp/yt-dlp) - Pela poderosa biblioteca de download
 - [Streamlink](https://streamlink.github.io/) - Para download de lives
 - [Flask](https://flask.palletsprojects.com/) - Framework web incrível
-```
