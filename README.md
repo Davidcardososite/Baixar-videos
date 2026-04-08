@@ -151,9 +151,12 @@ brew install ffmpeg
 # Baixe de https://ffmpeg.org/download.html
 ```
 
-5. **gitignore (na raiz do projeto)**
-```
-gitignore
+
+
+
+
+## 🔧 .gitignore recomendado
+```gitignore
 # Python
 __pycache__/
 *.py[cod]
