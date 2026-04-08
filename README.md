@@ -1,5 +1,3 @@
-Claro! Vou criar um README completo e profissional para o seu projeto. Baseado no código que você mostrou, aqui está:
-
 ```markdown
 # 📥 YouTube Downloader Web App
 
@@ -30,13 +28,13 @@ Uma aplicação web moderna para download de vídeos e lives do YouTube e outros
 - Python 3.7 ou superior
 - pip (gerenciador de pacotes Python)
 - FFmpeg (necessário para alguns formatos de vídeo)
-
+```
 ## 🔧 Instalação
 
 1. **Clone o repositório**
 ```bash
-git clone https://github.com/seu-usuario/youtube-downloader.git
-cd youtube-downloader
+git clone https://github.com/Davidcardososite/Baixar-videos.git
+cd Baixar-videos
 ```
 
 2. **Crie um ambiente virtual (recomendado)**
@@ -82,22 +80,37 @@ http://localhost:5000
 4. **Para baixar uma live:**
    - Cole a URL da live do YouTube
    - O sistema detectará automaticamente e usará o Streamlink
+   - No arquivo `routes.py` altere a parte abaixo para a URL da live copiada que você deseja baixar
+## url da live
+    if "https://www.youtube.com/live/Ni7rpSHG7xo?si=6RyE_mRUOS3TyWK8" in url:
+        print("Baixando live stream do youtube")
+        success, error = baixar_streamlink(url, output_path)
+        if not success:
+            return jsonify({'success': False, 'error': error})
+        return jsonify({'success': True, 'video_filename': output_filename})
+   Depois de alterar url da live reinicie o app novamente no seu navegador e coloque o mesmo link da live (https://www.youtube.com/live/Ni7rpSHG7xo?si=6RyE_mRUOS3TyWK8) no campo de colar link para baixar a live.
 
 ## 📁 Estrutura do Projeto
 
 ```
-youtube-downloader/
-├── __init__.py           # Configuração da aplicação Flask
-├── routes.py             # Rotas e lógica principal
-├── funcoes.py            # Funções utilitárias (progresso, limpeza)
-├── baixar_live.py        # Download de lives via Streamlink
-├── templates/
-│   ├── index.html        # Página principal
-│   ├── termos.html       # Termos de uso
-│   └── privacidade.html  # Política de privacidade
-├── uploads/              # Pasta temporária para downloads
-├── cookies.txt           # Cookies para autenticação (opcional)
-└── run.py                # Script de inicialização
+Baixar-videos/
+├── app/
+│   ├── __init__.py              # Configuração da aplicação Flask
+│   ├── routes.py                # Rotas e lógica principal
+│   ├── funcoes.py               # Funções utilitárias (progresso, limpeza)
+│   ├── baixar_live.py           # Download de lives via Streamlink
+│   ├── static/
+│   │   ├── css/
+│   │   ├── js/
+│   │   └── imagens/
+│   ├── templates/
+│   │   ├── index.html           # Página principal
+│   │   ├── termos.html          # Termos de uso
+│   │   └── privacidade.html     # Política de privacidade
+│   └── uploads/                 # Pasta temporária para downloads
+├── cookies.txt                  # Cookies para autenticação (opcional)
+├── run.py                       # Script de inicialização
+└── README.md                    # Documentação do projeto
 ```
 
 ## 🔄 API Endpoints
@@ -191,52 +204,3 @@ Link do Projeto: [https://github.com/seu-usuario/youtube-downloader](https://git
 - [Streamlink](https://streamlink.github.io/) - Para download de lives
 - [Flask](https://flask.palletsprojects.com/) - Framework web incrível
 ```
-
----
-
-Além disso, crie um arquivo `run.py` na raiz do projeto se ainda não tiver:
-
-```python
-# run.py
-from app import create_app
-
-app = create_app()
-
-if __name__ == '__main__':
-    app.run(debug=True, threaded=True)
-```
-
-E um arquivo `.gitignore`:
-
-```gitignore
-venv/
-__pycache__/
-*.pyc
-uploads/
-*.mp4
-*.webm
-*.mkv
-cookies.txt
-.env
-.DS_Store
-```
-
-Lembre-se de substituir "seu-usuario" e as informações de contato pelas suas. Este README fornece uma documentação completa e profissional para seu projeto! 🎉
-
-Documentação yt-dlp: https://github.com/yt-dlp/yt-dlp
-Use o comando `$ pip install yt-dlp` para instalar o pacote.
-Depois de ter instalado o que é necessário do arquivo requirements.txt. Para iniciar o aplicativo web use `$ python run.py`
-
-# Baixar lives com streamlink
-Documentação streamlink: https://streamlink.github.io/
-Use o comando `$ pip install streamlink` para instalar o pacote.
-
-No arquivo `routes.py` altere a parte abaixo para a URL da live copiada que você deseja baixar
-# url da live
-    if "https://www.youtube.com/live/Ni7rpSHG7xo?si=6RyE_mRUOS3TyWK8" in url:
-        print("Baixando live stream do youtube")
-        success, error = baixar_streamlink(url, output_path)
-        if not success:
-            return jsonify({'success': False, 'error': error})
-        return jsonify({'success': True, 'video_filename': output_filename})
-Depois de alterar url da live reinicie o app novamente no seu navegador e coloque o mesmo link da live `https://www.youtube.com/live/Ni7rpSHG7xo?si=6RyE_mRUOS3TyWK8` no campo de colar link para baixar a live.
