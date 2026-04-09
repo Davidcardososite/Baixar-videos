@@ -1,4 +1,17 @@
 ![Logo](downloader-video.jpg)
+
+<div align="center">
+  
+  ![Python](https://img.shields.io/badge/Python-3.7+-blue.svg)
+  ![yt-dlp](https://img.shields.io/badge/yt--dlp-Supported-red.svg)
+  ![Streamlink](https://img.shields.io/badge/Streamlink-blue.svg)
+  ![Flask](https://img.shields.io/badge/Flask-blue.svg)
+
+
+  
+</div>
+
+
 ```markdown
 # 📥 YouTube Downloader Web App
 
