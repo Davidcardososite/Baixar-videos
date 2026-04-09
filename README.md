@@ -1,3 +1,4 @@
+![Logo](downloader-video.jpg)
 ```markdown
 # 📥 YouTube Downloader Web App
 
