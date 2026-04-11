@@ -163,6 +163,9 @@ brew install ffmpeg
 
 # Windows
 # Baixe de https://ffmpeg.org/download.html
+
+# Termux
+# pkg install ffmpeg
 ```
 
 ### Erro de download muito lento
