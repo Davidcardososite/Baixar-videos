@@ -153,20 +153,27 @@ Baixar-videos/
 ## 🐛 Solução de Problemas
 
 ### Erro: "FFmpeg não encontrado"
-Instale o FFmpeg no seu sistema:
+I### 4. Instale o FFmpeg
+
+**Ubuntu/Debian:**
 ```bash
-# Ubuntu/Debian
+sudo apt update
 sudo apt install ffmpeg
+```
 
-# MacOS
+**MacOS:**
+```bash
 brew install ffmpeg
+```
 
-# Windows
-Baixe de https://ffmpeg.org/download.html
-
-# Termux
+**Termux**
+```bash
 pkg install ffmpeg
 ```
+
+**Windows:**
+- Baixe do [site oficial do FFmpeg](https://ffmpeg.org/download.html)
+- Adicione ao PATH do sistema
 
 ### Erro de download muito lento
 - Configure um proxy nas opções do yt-dlp
